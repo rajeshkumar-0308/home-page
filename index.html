@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+    <section class="photo">
+    <div class="one">
+    <nav>
+        
+        <div class="logo">
+            <a href="">PORTFOLIO</a>
+        </div>
+        <ul class="phone">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">RESUME</a></li>
+            <li><a href="#">SKILL</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+        <div class="menu">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+    </nav> 
+    <div class="name">
+        <p class="my">Rajesh Kumar. S</p>
+        <p class="web">I'm a passionate <span class="dev"> Web Developer</p></span>
+    </div>
+    </div> 
+</section>  
+</body>
+<script>
+   const menu = document.querySelector('.menu')
+   const list = document.querySelector('.phone')
+   menu.addEventListener('click',()=>{
+     list.classList.toggle('showmenu')
+   })
+</script>
+</html>

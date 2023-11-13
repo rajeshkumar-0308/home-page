@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.photo{
+    width: 100%;
+    height: 120vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(./IMG_9470-1.JPG);
+    background-size: cover;
+    background-position: center;
+  
+}
+
+nav{
+    font-size: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.phone a{
+    position: relative;
+    left: 10rem;
+    font-size: 25px;
+}
+
+.phone a:hover{
+    color: #009688;
+}
+
+
+nav li{
+    display: inline-block;
+    margin: 0 2px;
+}
+
+
+nav a{
+    text-decoration: none;
+}
+
+.logo{
+    position: relative;
+    right: 8rem;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+/*logo*/
+nav a{
+    color:rgba(245, 245, 245, 0.715);
+}
+
+.menu-line{
+    height: 3px;
+    width: 15px;
+    background-color: rgba(245, 245, 245, 0.715);
+    margin-bottom: 3px;
+}
+
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+.name{
+    color: aliceblue;
+    position: relative;
+    top: 15rem;
+    left: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.my{
+    position: relative;
+    left: 2rem;
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.web{
+    font-size: 35px;
+    position: relative;
+    right: 2rem;
+}
+.web .dev{
+    font-family: serif;
+    border-bottom: solid 2px #009688;
+}
+
+
+
+@media all and (max-width:700px){
+    nav{
+        flex-direction: column;
+    }
+    nav li{
+        display: block;
+        padding: 15px 0;
+        width: 46rem;
+        border-bottom: solid 2px white;
+     }
+    .phone{
+        background-color: rgba(28, 28, 28, 0.6);
+        position: absolute;
+        text-align: center;
+        height: 53rem;
+        top: 3rem;
+        left: -12rem;
+        padding: 0;
+        display: none;
+    }
+    
+    .phone a{
+        position: relative;
+        left: -1rem;
+        font-size: 25px;
+    }
+    .logo{
+       align-self: flex-start;
+       margin: 10px 0px 0px 20px; 
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 35px;
+        top: 25px;
+    }
+    .logo{
+        position: relative;
+        right: 0rem;
+        font-size: 36px;
+        font-weight: bolder;
+    }
+    .name{
+        color: aliceblue;
+        position: relative;
+        top: 20rem;
+        left: 12rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .my{
+        position: relative;
+        left: -6.5rem;
+        font-size: 25px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .web{
+        font-size: 19px;
+        position: relative;
+        right: 9rem;
+    }
+    .web .dev{
+        font-family: serif;
+        border-bottom: solid 2px #009688;
+    }
+
+    .showmenu{
+        display: block;
+    }
+}
+
